@@ -60,13 +60,32 @@ const objuser = [
     },
 ]
 
-console.log(objuser[1].email);
-console.log(user);
+// console.log(objuser[1].email);
+// console.log(user);
 
-console.log(Object.keys(user)); //important here all keys are insert an one array
-console.log((Object.values(user)));//imp here all values are insert an one array
-console.log(Object.entries(user)); //here all keys and value pair are make one one array
+// console.log(Object.keys(user)); //important here all keys are insert an one array
+// console.log((Object.values(user)));//imp here all values are insert an one array
+// console.log(Object.entries(user)); //here all keys and value pair are make one one array
 
-console.log(user.hasOwnProperty('isLoggedIn')); // here it helps to check the that given keys are available or not
-console.log(user.hasOwnProperty('firstname'));
+// console.log(user.hasOwnProperty('isLoggedIn')); // here it helps to check the that given keys are available or not
+// console.log(user.hasOwnProperty('firstname'));
+
+//destructuring :
+// it means if i have given the object data or json data then in js how to use the obj value through the destructuring method
+
+
+const course = {
+    coursename : "js tutorial",
+    price : "999",
+    courseInstructor : "rajesh" 
+}
+ 
+//course.courseInstructor (it is the one way to extract the data from obj)
+
+//another way is destructer :
+
+const {courseInstructor : instructor} = course //this is object destructor
+console.log(instructor);
+
+
 
